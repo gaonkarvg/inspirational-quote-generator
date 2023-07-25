@@ -1,10 +1,14 @@
 {
-    "presets": ["@babel/preset-env", "@babel/preset-react", "babel-typescript"],
-    "plugins": ["styled-components", {
-        "displayName": true,
-        "fileName": true,
-        "minify": true,
-        "pure": true,
-        "ssr": true}
+    "presets": [
+        "next/babel"
+    ],
+    "plugins": [
+        [
+            "styled-components",
+            {
+                "displayName": true,
+                "ssr": true
+            }
+        ]
     ]
 }
